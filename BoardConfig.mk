@@ -19,3 +19,12 @@ include device/yu/lettuce/board/*.mk
 
 # inherit from proprietary files
 -include vendor/yu/lettuce/BoardConfigVendor.mk
+
+# Enable dexpreopt to speed boot time
+ifeq ($(HOST_OS),linux)
+  ifneq ($(TARGET_BUILD_VARIANT),eng)
+    ifeq ($(WITH_DEXPREOPT),)
+      WITH_DEXPREOPT := true
+    endif
+  endif
+endif
