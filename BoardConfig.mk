@@ -17,6 +17,8 @@ include device/cyanogen/msm8916-common/BoardConfigCommon.mk
 
 include device/yu/lettuce/board/*.mk
 
+TARGET_DISABLE_CMSDK := true
+
 # inherit from proprietary files
 -include vendor/yu/lettuce/BoardConfigVendor.mk
 

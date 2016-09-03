@@ -92,6 +92,7 @@
             64 - Volume keys
          For example, a device with Home, Back and Menu keys would set this
          config to 7. 
+         config to 7.
     <integer name="config_deviceHardwareKeys">64</integer> -->
 
     <!-- Hardware keys present on the device with the ability to wake, stored as a bit field.
@@ -106,6 +107,7 @@
             64 - Volume rocker
          For example, a device with Home, Back and Menu keys would set this
          config to 7. 
+         config to 7.
     <integer name="config_deviceHardwareWakeKeys">64</integer> -->
 
     <!-- Whether a software navigation bar should be shown. NOTE: in the future this may be
@@ -131,4 +133,7 @@
 
     <!-- Enable doze powersaving -->
     <bool name="config_enableAutoPowerModes">true</bool>
+    <!-- Component name of the combo network location provider.
+    <string name="config_comboNetworkLocationProvider" translatable="false">com.qualcomm.location</string> -->
+
 </resources>
